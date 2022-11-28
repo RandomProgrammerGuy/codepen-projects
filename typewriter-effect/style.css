@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Source+Code+Pro:ital,wght@0,200;0,400;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Source+Code+Pro:ital,wght@0,400;1,400&display=swap');
 
 body {
     background-color: #282c34;
@@ -8,6 +8,33 @@ body {
 
 h1 {
     font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    color: #61afe3;
+    text-shadow: black 0px 2px 10px;
+}
+
+h1 strong {
+    color: #c678bc;
+    font-weight: 400;
+}
+
+h1 i {
+    color: #ffc922;
+    font-style: normal;
+}
+
+h1 label {
+    color: #e06c60;
+}
+
+h1 s {
+    color: #7bc379;
+    text-decoration: none;
+}
+
+a.NOTLINK {
+    color: #c678bc;
+    text-decoration: none;
 }
 
 #txt {
@@ -15,8 +42,20 @@ h1 {
 }
 
 h2 {
+    color: azure;
     text-align: center;
     font-family: 'Inter', sans-serif;
+}
+
+h2 a {
+    color: aqua;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+h2 a:hover {
+    text-shadow: black 0px 5px 10px;
+    color: antiquewhite;
 }
 
 .attr {
