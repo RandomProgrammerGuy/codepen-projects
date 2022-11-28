@@ -81,16 +81,38 @@ h1::before, h1::after, h3::before, h3::after {
 h1::before {
     background-color: #282c34;
     animation: typewriter 2s steps(19) forwards;
+    animation-delay: 1s;
 }
 
 h3::before {
     background-color: #282c34;
     animation: typewriter 3s steps(26) forwards;
-    animation-delay: 2s;
+    animation-delay: 3s;
+}
+
+h1::after, h3::after {
+    width: .125em;
+    background: transparent;
+}
+
+h1::after {
+    animation: typewriter 2s steps(19) forwards, blinking 700ms steps(19) 3;
+    animation-delay: 1s;
+}
+
+h3::after {
+    animation: typewriter 3s steps(26) forwards, blinking 700ms steps(26) infinite;
+    animation-delay: 3s;
 }
 
 @keyframes typewriter {
     to {
         left: 100%;
+    }
+}
+
+@keyframes blinking {
+    to {
+        background: #e06c60;
     }
 }
