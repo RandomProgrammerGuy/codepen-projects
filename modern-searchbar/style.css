@@ -8,9 +8,58 @@ input {
     border-radius: 50px;
     background: #402520;
     box-shadow:  20px 20px 60px #2c1a17, -20px -20px 60px #3b2621;    
-    width: 80vw;
+    width: 10vw;
     height: 10vh;
-    margin-top: 45vh;
-    margin-left: 10vw;
+    margin-top: 5vh;
+    margin-left: 43.25vw;
     border: none;
+    transition: 1s;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.3em;
+    color: #281512;
+    padding-left: 2.5vw;
+    padding-right: -2.5vw;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+input:focus {
+    border: #dad2d1;
+    background-color: #dad2d1;
+    border: none;
+    stroke-width: 0%;
+    width: 80vw;
+    margin-left: 8.25vw;
+}
+
+input::placeholder {
+    color: #573731;
+    font-weight: 200;
+}
+
+h1, h2 {
+    transition: 1s;
+    margin-top: 30vh;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #dad2d1;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+h2 a {
+    color: #ee8720;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+h2 a:hover {
+    text-shadow: black 0px 10px 20px;
 }
